@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up form</title>
+    <title>Sign-up | Turtle House</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <div class="leftpane">
-        <div class="leftcontent">
-            <h3>Marketel Associates</h3>
-        </div>
-        <footer>        
-            Photo by <a href="https://unsplash.com/de/@saxon_white?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Saxon White</a> on <a href="https://unsplash.com/photos/2QCXxd_7fXw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </footer>
+            <div class="leftcontent">
+                <h3>Turtle House Solutions</h3>
+            </div>
+            <footer>
+                Photo by <a
+                    href="https://unsplash.com/de/@saxon_white?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Saxon
+                    White</a> on <a
+                    href="https://unsplash.com/photos/2QCXxd_7fXw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </footer>
 
         </div>
         <div class="rightpane">
             <div class="rintro">
                 <p>
-                Build your future with us. We'll get you there.
+                    Build your future with us. We'll get you there. But keep in mind this is not a real web service.
                 </p>
-                <p>
-                Register and try our service now!
+                <p class="tagline">
+                    Register and try our service now!
                 </p>
             </div>
-            <div class="formcontainer">
-                <form action="GET">
-                    <label for="fname">First name: </label>
-                    <input type="text" name="fname" id="fname" required>
+            <form action="#" method="GET">
+                <div class="formcontainer">
+                    <div class="input">
+                        <label for="fname">First name: </label>
+                        <input type="text" name="fname" id="fname" required>
+                    </div>
 
-                    <label for="lname">Last name:</label>
-                    <input type="text" name="lname" id="lname" required>
+                    <div class="input">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
 
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" required>
+                    <div class="input">
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
 
-                    <label for="password2">Repeat your password:</label>
-                    <input type="password" name="password2" id="password2">
+                    <div class="input">
+                        <label for="lname">Last name:</label>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
 
+                    <div class="input">
+                        <label for="phone">Phone: </label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+
+                    <div class="input">
+                        <label for="password2">Confirm your Password: </label>
+                        <input type="password" name="password2" id="password2" required>
+                    </div>
+
+                </div>
+                <div class="formbutton">
                     <button type="submit">Register</button>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
 </body>
+
 </html>
