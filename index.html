@@ -12,7 +12,9 @@
     <div class="container">
         <div class="leftpane">
             <div class="leftcontent">
-                <h3>Turtle House Solutions</h3>
+                <div class="brand">
+                    <h3>Turtle House Solutions</h3>
+                </div>
             </div>
             <footer>
                 Photo by <a
@@ -25,7 +27,8 @@
         <div class="rightpane">
             <div class="rintro">
                 <p>
-                    Build your future with us. We'll get you there. But keep in mind this is not a real web service.
+                    Build your future with us. Whatever problem you may have right now, our solutions will get you
+                    there. But keep in mind this is not a real web service.
                 </p>
                 <p class="tagline">
                     Register and try our service now!
@@ -39,23 +42,23 @@
                     </div>
 
                     <div class="input">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-
-                    <div class="input">
-                        <label for="password">Password: </label>
-                        <input type="password" name="password" id="password" required>
-                    </div>
-
-                    <div class="input">
                         <label for="lname">Last name:</label>
                         <input type="text" name="lname" id="lname" required>
                     </div>
 
                     <div class="input">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="input">
                         <label for="phone">Phone: </label>
-                        <input type="text" name="phone" id="phone">
+                        <input type="text" name="phone" id="phone" minlength="10" maxlength="10">
+                    </div>
+
+                    <div class="input">
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password" required>
                     </div>
 
                     <div class="input">
@@ -68,6 +71,9 @@
                     <button type="submit">Register</button>
                 </div>
             </form>
+                <div class="already">
+                    Already have an account? <span class="login"><a href="#">Log in</a></span>
+                </div>
         </div>
     </div>
 </body>
